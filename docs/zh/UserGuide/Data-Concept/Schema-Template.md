@@ -122,7 +122,7 @@ createSchemaTemplate(template);
 setSchemaTemplate("template", "root.Beijing");
 ```
 
-**挂载元数据模板后，即可向挂载节点或该节点的子孙节点，按照模板的模式进行数据写入**。例如，按上述代码创建并挂载模板，并在 root.Beijing 路径上设置了存储组后，即可写入例如 root.Beijing.petro_vehicle.velocity 等时间序列数据，系统将自动创建 petro_vehicle 节点，并设置其“正在使用模板”，对写入数据应用模板中为 velocity 定义的元数据信息。
+**挂载元数据模板后，即可向挂载节点或该节点的子孙节点，按照模板的模式进行数据写入**。例如，按上述代码创建并挂载模板，并在 root.Beijing 路径上设置了存储组后，即可写入例如 root.Beijing.petro_vehicle.VIN1.velocity 等时间序列数据，系统将自动创建 petro_vehicle 节点及实体 VIN1 节点，并设置其“正在使用模板”，对写入数据应用模板中为 velocity 定义的元数据信息。
 
 * 修改、激活、解除、卸载与删除元数据模板
 
